@@ -37,7 +37,7 @@ for i in range(size):
             'Name' : name,
             'Age' : age,
             'Program' : program,
-            'Year Of Code' : year_of_study,
+            'Year Of Study' : year_of_study,
             'Subjects' : subjects,
             'Scores' : scores,
             'Grade' : grades
