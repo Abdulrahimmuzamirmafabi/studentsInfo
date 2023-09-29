@@ -44,15 +44,10 @@ for i in range(size):
         }
 print(student_details)
 
-# Use the 'max()' function to find the key (month) with the maximum value (highest sales).
-best_grade = max(grades, key=lambda grade: grades[grade])
-
-# Print the result, indicating the month with the highest sales.
-print("Highest Grade:", best_grade)
 # the 'max()' function to find the key (student name) with the maximum value (highest score).
-#top_student = max(grades, key=grades.get)
-#lower_student = min(grades,key=grades.get)
+top_student = max(grades, key=grades.get)
+lower_student = min(grades,key=grades.get)
 
 # print the result
-#print(f"Student {name} has a low score of {grades[top_student]}.")
-#print(f"Student {name} has a high score of {grades[lower_student]}.")
+print(f"The top student is {top_student} with a score of {grades[top_student]}.")
+print(f"The lower student is {lower_student} with a score of {grades[lower_student]}.")
