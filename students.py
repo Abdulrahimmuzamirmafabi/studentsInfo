@@ -32,7 +32,7 @@ for i in range(size):
         grade3 = str(input('Enter grade for marks3: '))
         grades['grade1'] = grade1
         grades['grade2'] = grade2
-        grades['grade3'] = grade3
+        grades['grade3'] = grade3        
         student_details[regNo] = {
             'Name' : name,
             'Age' : age,
@@ -42,12 +42,15 @@ for i in range(size):
             'Scores' : scores,
             'Grade' : grades
         }
+        # Function to find the maximum and minimum marks
+def find_max_min_marks(values):
+    max_mark = max(values)
+    min_mark = min(values)
+    return max_mark, min_mark
+
+# Iterate through student details and calculate max and min marks for each student
+for regNo, student in student_details.items():
+    max_marks, min_marks = find_max_min_marks(student['Scores'].values())
+    print(f"Student: {student['Name']}, Max Marks: {max_marks}, Min Marks: {min_marks}")
+
 print(student_details)
-
-# the 'max()' function to find the key (student name) with the maximum value (highest score).
-top_student = max(grades, key=grades.get)
-lower_student = min(grades,key=grades.get)
-
-# print the result
-print(f"The top student is {top_student} with a score of {grades[top_student]}.")
-print(f"The lower student is {lower_student} with a score of {grades[lower_student]}.")
