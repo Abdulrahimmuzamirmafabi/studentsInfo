@@ -54,3 +54,4 @@ for regNo, student in student_details.items():
     print(f"Student: {student['Name']}, Max Marks: {max_marks}, Min Marks: {min_marks}")
 
 print(student_details)
+# this is my final code to be written on this repository..
